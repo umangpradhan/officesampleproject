@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<style>
+		*{
+			box-sizing:border-box;
+			margin:0;
+			padding:0;
+		}
+		body{
+			font-family: 'Poppins', sans-serif;
+			background-image:url('https://icdn2.digitaltrends.com/image/digitaltrends/macbook-air-2018-review-5879-1200x630-c-ar1.91.jpg');
+			height:600px;
+			width:100%;
+			background-position:center;
+			background-repeat:no-repeat;
+			background-size:cover;
+		}
+		nav{
+			width:100%;
+			height:70px;
+			display:flex;
+			justify-content:space-around;
+			align-items:center;
+			background:rgba(0,0,0,0.9);
+			}
+		nav .logo{
+			width:18%;
+			height:auto;
+		}
+		nav .logo h1{
+			text-transform:uppercase;
+			color:#fff;
+			font-size:35px;
+		}
+		nav .menu{
+			width:45%;
+			
+		}
+		nav .menu ul{
+			list-style:none;
+		}
+		nav .menu ul li {
+			display:inline;
+			padding:15px;
+			font-size:17px;
+		}
+		nav .menu ul li a{
+			text-transform:uppercase;
+			text-decoration:none;
+			color:#fff;
+		}
+		.text{
+			text-transform:uppercase;
+			color:#fff;
+			background:rgba(0,0,0,0.6);
+			height:auto;
+			float:right;
+			margin-top:250px;
+			padding:20px;
+		}
+		.text p,h2{
+			text-align:left;
+			font-size:20px;
+			padding-right:120px;
+		}
+		#content{
+			width:100%;
+			height:auto;
+			background:#fff;
+			margin-top:530px;
+			padding:80px;
+			display:flex;
+			justify-content:space-around;
+			align-items:center;
+			}
+		.contentimg{
+			width:70%;
+			margin:40px;
+			
+			}
+		.contenttext{
+			margin:0px;
+			}
+		.contenttext h2{
+			text-align:center;
+			text-transform:uppercase;
+			padding:10px;
+			}
+		.contenttext p{
+			text-align:center;
+			padding:20px;
+			}
+		.feature{
+			width:80%;
+			margin:40px;
+			margin-top:0;
+			}
+		.feature h1{
+			text-transform:uppercase;
+			}
+		#images{
+			width:100%;
+			margin:0;
+			padding:0;
+			background:#313332;
+			height:400px;
+			}
+		.row1{
+			width:100%;
+			height:200px;
+			margin:0;
+			padding:0;
+			display:flex;
+			flex-wrap:wrap;
+			}
+		.overlay{
+			background:#000;
+			opacity:0.2;
+			}
+		.icon{
+			margin-left:640px;
+			margin-top:-110px;
+			position:absolute;
+			}
+		.fa-address-book-o{
+			padding:5px;
+			font-size:18px;
+			border-radius:3px;
+			background:#fff;
+			margin-right:5px;
+			}
+		.fa-search{
+			padding:5px;
+			border-radius:3px;
+			font-size:18px;
+			background:#fff;
+			}
+		
+		#circle{
+			width:100%;
+			height:auto;
+			display:flex;
+			align-items:center;
+			justify-content:space-around;
+			padding:60px;
+			background:#fff;
+			}
+		.cirimg{
+			width:80%;
+			height:auto;
+			padding:40px;
+			margin:10px;
+			}
+		.cirimg img{
+			width:100%;
+			height:200px;
+			border-radius:50%;
+			background:rgba(0,0,0,0.3);
+			}
+		.cirtext h3{
+			color:#313332;
+			}
+		.sec{
+			margin-left:722px;
+			margin-top:-345px;
+			border-radius:50%;
+			height:200px;
+			width:210px;
+			background:#313332;
+			opacity:0.5;
+			}
+		.sec h3{
+			color:#fff;
+			text-align:center;
+			padding-top:85px;
+			font-size:20px;
+			}
+		#title{
+			width:100%;
+			height:400px;
+			margin-top:100px;
+			background:#313332;
+			opacity:0.8;
+			
+			}
+		#title img{
+			width:100%;
+			height:400px;
+			
+			}
+		.titleimg{
+			width:100%;
+			padding:80px;
+			display:flex;
+			align-items:center;
+			justify-content:space-around;
+			margin-top:-485px;
+			position:relative;
+			color:#fff;
+			padding-bottom:0;
+			}
+		.contenttext1{
+			color:#fff;
+			padding:20px;
+			}
+		.contenttext1 h2{
+			text-transform:uppercase;
+			font-size:30px;
+			}
+		.titleimg p1{
+			margin-top:70px;
+			}
+		.titleimg img{
+			padding-top:80px;
+			position:relative;
+			}
+		#numbers{
+			width:100%;
+			height:100px;
+			background:#fff;
+			padding:80px;
+			display:flex;
+			align-items:center;
+			justify-content:space-around;
+			}
+		.col1{
+			width:20%;
+			}
+		.col1 h1{
+			font-family: 'Chewy', cursive;
+			font-size:30px;
+			}
+		.col1 h3{
+			color:#00c7e8;
+			text-transform:uppercase;
+			}
+		footer{
+			width:100%;
+			
+			height:400px;
+			
+			}
+		.footercontent{
+			width:100%;
+			background:rgba(0,0,0,0.7);
+			height:350px;
+			color:#fff;
+			display:flex;
+			align-items:center;
+			padding-left:80px;
+			padding-right:100px;
+			padding-top:60px;
+			padding-bottom:20px;
+			justify-content:space-around;
+			}
+		.col21{
+			text-align:left;
+			width:50%;
+			padding-left:30px;
+			padding-right:30px;
+			}
+		.col21 h3{
+			position:relative;
+			text-transform:uppercase;
+			}
+		.col21 h3:after{
+			content:"";
+			display:block;
+			width:50px;
+			height:2px;
+			background:#fff;
+			position:absolute;
+			right:50%;
+			top:50%;
+			}
+		.col22{
+			text-align:left;
+			width:50%;
+			padding-top:0px;
+			padding-left:30px;
+			padding-right:30px;
+			}
+		.col22 h3{
+			position:relative;
+			text-transform:uppercase;
+			}
+		.col22 h3:after{
+			content:"";
+			display:block;
+			width:50px;
+			height:2px;
+			background:#fff;
+			position:absolute;
+			right:40%;
+			top:50%;
+			}
+			.col23{
+			text-align:left;
+			width:50%;
+			padding-left:30px;
+			padding-right:30px;
+			}
+			.col23 p{
+				padding-bottom:10px;
+				}
+		.col23 h3{
+			position:relative;
+			text-transform:uppercase;
+			}
+		.col23 h3:after{
+			content:"";
+			display:block;
+			width:50px;
+			height:2px;
+			background:#fff;
+			position:absolute;
+			right:40%;
+			top:50%;
+			}
+		.copy{
+			width:100%;
+			height:50px;
+			color:#fff;
+			padding:10px;
+			background:rgba(0,0,0,0.8);
+			}
+		.fa-facebook{
+			background:#00c7e8;
+			padding:5px;
+			padding-left:8px;
+			padding-right:8px;
+			color:#fff;
+			}
+		.fa-google-plus{
+			background:#00c7e8;
+			padding:5px;
+			color:#fff;
+			}
+		.fa-instagram{
+			background:#00c7e8;
+			padding:5px;
+			color:#fff;
+			padding-left:6px;
+			padding-right:6px;
+			}
+		.fa-twitter{
+			background:#00c7e8;
+			padding:5px;
+			color:#fff;
+			}
+		.fa-youtube{
+			background:#00c7e8;
+			padding:5px;
+			color:#fff;
+			padding-left:6px;
+			padding-right:6px;
+			}
+		.fa-dribbble{
+			background:#00c7e8;
+			padding:5px;
+			color:#fff;
+			padding-left:7px;
+			padding-right:7px;
+			}
+
+@media screen and (max-width:1024px) 
+{
+	nav .logo{
+		display:none;
+		}
+		nav .menu{
+			width:100%;
+			}
+	nav .menu ul li a{
+		width:100%;
+		height:auto;
+		margin:0;
+		padding:5px;
+		
+		}
+	.icon{
+		margin-left:480px;
+		}
+	.cirimg img{
+		height:130px;
+		}
+	.cirtext {
+		margin:20px;
+		padding-bottom:20px;
+		}
+	.sec{
+		width:130px;
+		height:130px;
+		margin-left:560px;
+		margin-top:-360px;
+		}
+	.sec h3{
+		padding-top:50px;
+		}
+	.contenttext1{
+		margin-top:30px;
+		}
+	.contenttext1 h2{
+		font-size:24px;
+		}
+	.col21 h3:after{
+			right:25%;
+			}
+	.col23 h3{
+			margin-top:-10px;
+			}
+	.col22 h3:after{
+			right:20%;
+			}
+	.col23 h3{
+			margin-top:-70px;
+			}
+	.col23 h3:after{
+			right:10%;
+			}
+}			
+@media screen and (max-width:768px)
+{
+	nav .logo{
+		display:none;
+		}
+		nav .menu{
+			width:100%;
+			}
+	nav .menu ul li a{
+		width:100%;
+		height:auto;
+		margin:0;
+		padding:5px;
+		
+		}
+	.icon{
+		margin-left:360px;
+		}
+	.cirimg img{
+	width:100px;
+		height:100px;
+		}
+	.cirtext {
+		margin:20px;
+		padding-bottom:20px;
+		}
+	.sec{
+		width:100px;
+		height:100px;
+		margin-left:440px;
+		margin-top:-335px;
+		}
+	.sec h3{
+		padding-top:40px;
+		font-size:16px;
+		}
+	.titleimg{
+		padding:20px;
+		margin-top:-425px;
+		}
+	.titleimg img{
+		padding-top:50px;
+		}
+	.titleimg p1{
+	font-size:14px;
+		}
+	.contenttext1{
+		margin-top:30px;
+		}
+	.contenttext1 h2{
+		font-size:20px;
+		}
+		.contenttext1 p{
+		font-size:14px;
+		}
+	
+	.col21 h3:after{
+			right:10%;
+			width:30px;
+			}
+	.col21 p{
+		font-size:14px;
+		}
+		.col21 h3{
+		font-size:18px;
+		}
+	.col22 h3{
+			margin-top:-10px;
+			font-size:18px;
+			}
+	.col22 h3:after{
+			right:25%;
+			width:30px;
+			}
+		.col22 table{
+		font-size:14px;
+		}
+	.col23 h3{
+			margin-top:-70px;
+			font-size:18px;
+			}
+	.col23 h3:after{
+			right:-10%;
+			width:30px;
+			}
+		.col23 p{
+		font-size:14px;
+		}
+		.footercontent{
+			padding-left:40px;
+			padding-right:40px;
+			
+			}
+}	
+@media screen and (max-width:411px)
+{
+	body{
+		max-width:411px;
+		}
+		nav{
+			width:100%;
+			height:auto;
+			display:inline-block;
+			background:rgba(0,0,0,0.6);
+			}
+			nav .logo{
+			width:100%;
+			height:auto;
+			display:inherit;
+			}
+	nav .logo h1{
+	text-align:center;
+		font-size:20px;
+		}
+		nav .menu{
+			width:100%;
+			}
+	nav .menu ul li a{
+		width:100%;
+		height:auto;
+		margin:0;
+		padding:5px;
+		display:inline;
+		}
+		.text{
+			padding-right:0px;
+			}
+		#content{
+			width:100%;
+			height:auto;
+			background:#fff;
+			margin-top:530px;
+			padding:80px;
+			display:block;
+			justify-content:space-around;
+			align-items:center;
+			}
+		.contentimg{
+			width:70%;
+			margin:40px;
+			
+			}
+		.contenttext{
+			margin:0px;
+			}
+		.contenttext h2{
+			text-align:center;
+			text-transform:uppercase;
+			padding:10px;
+			font-size:18px;
+			}
+		.contenttext p{
+			text-align:center;
+			padding:20px;
+			font-size:14px;
+			}
+		.feature{
+			width:80%;
+			margin:40px;
+			margin-top:0;
+			}
+		.feature h1{
+			text-transform:uppercase;
+			font-size:22px;
+			}
+		.feature p{
+			font-size:16px;
+			}
+		.row1 img{
+			height:100px;
+			}
+	.icon{
+		margin-left:190px;
+		}
+		.fa-address-book-o{
+			padding:3px;
+			font-size:10px;
+			border-radius:3px;
+			background:#fff;
+			margin-right:5px;
+			}
+		.fa-search{
+			padding:3px;
+			border-radius:3px;
+			font-size:10px;
+			background:#fff;
+			}
+		#circle{
+			width:100%;
+			display:inline;
+			padding-top:0px;
+			height:1000px;
+			}
+	.cirimg img{
+	width:100px;
+		height:100px;
+		display:inline;
+		}
+	.cirtext {
+		margin:20px;
+		padding-bottom:20px;
+		}
+	.sec{
+		width:100px;
+		height:100px;
+		margin-left:155px;
+		margin-top:-555px;
+		}
+	.sec h3{
+		padding-top:40px;
+		font-size:16px;
+		}
+		#title{
+			margin-top:400px;
+			height:500px;
+			}
+		#title img{
+			position:relative;
+			height:500px;;
+			}
+	.titleimg{
+		width:300px;
+		padding:20px;
+		margin-left:-400px;
+		margin-top:0px;
+		height:400px;
+		display:inline;
+		position:absolute;
+		}
+	.titleimg img{
+		display:none;
+		}
+	.titleimg p1{
+	text-align:justify;
+	font-size:14px;
+	padding-left:20px;
+	
+		}
+	.contenttext1{
+		margin-top:10px;
+		}
+	.contenttext1 h2{
+		font-size:18px;
+		}
+		.contenttext1 p{
+		font-size:14px;
+		}
+		#numbers{
+			display:inline;
+			padding:0;
+			}
+	
+	.col21 h3:after{
+			right:10%;
+			width:30px;
+			color:#313332;
+			}
+	.col21 p{
+		font-size:14px;
+		padding-bottom:20px;
+		}
+		.col21 h3{
+		font-size:18px;
+		padding-top:20px;
+		}
+	.col22 h3{
+			
+			font-size:18px;
+			padding-top:20px;
+			}
+	.col22 h3:after{
+			right:25%;
+			width:30px;
+			}
+		.col22 table{
+		font-size:14px;
+		padding-bottom:40px;
+		}
+	.col23 h3{
+			padding-top:40px;
+			font-size:18px;
+			}
+	.col23 h3:after{
+			right:-10%;
+			width:30px;
+			}
+		.col23 p{
+		font-size:14px;
+		padding-bottom:20px;
+		}
+		footer{
+			width:100%;
+			height:auto;
+			}
+		.footercontent{
+			padding:0;
+			display:inline;
+			width:100%;
+			color:#313332;
+			}
+		.col23 a{
+		margin:-4px;
+		
+		}
+		.col23 {
+		margin:10px;
+		}
+}	
+
+	</style>
+</head>
+<body>
+	<center>
+		<header>
+			<nav>
+				<div class="logo">
+					<h1>your logo</h1>
+				</div>
+				<div class="menu">
+					<ul>
+						<li><a href="#" style="color:#00c7e8;">Home</a></li>
+						<li><a href="#">Pages</a></li>
+						<li><a href="#">Feature</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</div>
+				
+			</nav>
+			<div class="text">
+				<p>here you can type</p>
+				<h2>your company </br> slogan</h2>
+			</div>
+		</header>
+		<section id="content">
+			<div class="contentimg">
+			<img src="E:\portfolio\Test-04\searchicon.png" />
+				<div class="contenttext">
+					<h2>research</h2>
+					<p>Research is a process of systematic inquiry that entails collection of data; documentation of critical information; and analysis and interpretation of that data/information, in accordance with suitable methodologies set by specific professional fields and academic disciplines.</p>
+				</div>
+			</div>
+			<div class="contentimg">
+			<img src="E:\portfolio\Test-04\laptopicon.png" />
+				<div class="contenttext">
+					<h2 style="color:#00c7e8;">fully customizable</h2>
+					<p>Research is a process of systematic inquiry that entails collection of data; documentation of critical information; and analysis and interpretation of that data/information, in accordance with suitable methodologies set by specific professional fields and academic disciplines.</p>
+				</div>
+			</div>
+			<div class="contentimg">
+			<img src="E:\portfolio\Test-04\settingsicon.png" />
+				<div class="contenttext">
+					<h2>work and work</h2>
+					<p>Research is a process of systematic inquiry that entails collection of data; documentation of critical information; and analysis and interpretation of that data/information, in accordance with suitable methodologies set by specific professional fields and academic disciplines.</p>
+				</div>
+			</div>
+			
+		</section>
+		<div class="feature">
+			<h1>Featured works</h1>
+			<p>Research is a process of systematic inquiry that entails collection of data; documentation of critical information; and analysis and interpretation of that data/information, in accordance with suitable methodologies set by specific professional fields and academic disciplines.</p>
+		</div>
+		
+	</center>
+	<section id="images">
+		<div class="row1">
+			<img src="https://images.unsplash.com/photo-1470219556762-1771e7f9427d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" style="width:40%; height:200px;"/>
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQdJSkqLCGAbv2WlUX-DqC3Gt3vAC8Z7pMEOw&usqp=CAU" style="width:20%; height:200px;"/>
+			<img src="https://i.pinimg.com/originals/6f/7b/94/6f7b94352582b1c85103c96f799f0424.jpg" style="width:20%; height:200px;"/>
+			<img src="https://www.hdnicewallpapers.com/Walls/Thumb/Computers/Superb_HD_Laptop_Background_Wallpaper.jpg" style="width:20%; height:200px;"/>
+		</div>
+		<div class="row1">
+			<img src="https://lh3.googleusercontent.com/proxy/ah3VTsSRDabhQAtyhcgqCIdBv7pt8l6ghPY_0-NfsGTewsqAm56ebcKUMkaN93giKtsjrnWUPCQSTTL9TMWQkCLf7qtu9NShU9gRHpsBECMh9Z8pAN9WqHaBa0gOHvBQyg1Is4XdMpGgYb63xJ5-3nSCNZgKDMvHbRQ_eMcJvQzMVnxd0LkWLQg" style="width:20%; height:200px;"/>
+			<img src="https://i.pinimg.com/originals/44/5c/fc/445cfc9701e150e91e25eeb0e2525c5d.jpg" style="width:20%; height:200px;"/>
+			<img class="overlay" src="https://i.pinimg.com/originals/6f/7b/94/6f7b94352582b1c85103c96f799f0424.jpg" style="width:20%; height:200px;"/>
+			<img src="https://wallpapercave.com/wp/wp5852477.jpg" style="width:40%; height:200px;"/>
+		</div>
+	</section>
+	<div class="icon">
+		<i class="fa fa-address-book-o"></i>
+		<i class="fa fa-search"></i>
+	</div>
+	<center>
+	<section id="circle">
+		<div class="cirimg">
+			<img src="https://e7.pngegg.com/pngimages/325/701/png-clipart-white-and-blue-checked-pattern-illustration-white-black-angle-area-pattern-diamond-pattern-background-material-texture-angle.png"/>
+			<div class="cirtext">
+				<h3>Dexter Gilbert</h3>
+			</div>
+		</div>
+		<div class="cirimg">
+			<img src="https://e7.pngegg.com/pngimages/325/701/png-clipart-white-and-blue-checked-pattern-illustration-white-black-angle-area-pattern-diamond-pattern-background-material-texture-angle.png"/>
+			<div class="cirtext">
+				<h3>Mary Collier</h3>
+			</div>
+		</div>
+		<div class="cirimg">
+			<img src="https://e7.pngegg.com/pngimages/325/701/png-clipart-white-and-blue-checked-pattern-illustration-white-black-angle-area-pattern-diamond-pattern-background-material-texture-angle.png" />
+			<div class="cirtext">
+				<h3>Stefan Morrison</h3>
+			</div>
+		</div>
+		<div class="cirimg">
+			<img src="https://e7.pngegg.com/pngimages/325/701/png-clipart-white-and-blue-checked-pattern-illustration-white-black-angle-area-pattern-diamond-pattern-background-material-texture-angle.png"/>
+			<div class="cirtext">
+				<h3>Bill Smith</h3>
+			</div>
+		</div>
+		</section>
+		
+	</center>
+	<div class="sec">
+			<h3>Secretary</h3>
+	</div>
+		<section id="title">
+			<img class="overlay" src="https://e7.pngegg.com/pngimages/325/701/png-clipart-white-and-blue-checked-pattern-illustration-white-black-angle-area-pattern-diamond-pattern-background-material-texture-angle.png"/>
+		<div class="titleimg">
+			<img src="E:\portfolio\Test-04\multiimage.png" />
+			<div class="contenttext1">
+				<h2>your awesome title</h2>
+				<p>Research is a process of systematic inquiry that entails collection of data; documentation of critical information; and analysis and interpretation of that data/information, in accordance with suitable methodologies set by specific professional fields and academic disciplines.</p>
+			</div>
+			<p1>Research is a process of systematic inquiry that entails collection of data; documentation of critical information; </p1>
+		</div>
+		</section>
+	<center>
+		<section id="numbers">
+			<div class="col1">
+				<h1>455</h1>
+				<h3>Followers</h3>
+			</div>
+			<div class="col1">
+				<h1>1991</h1>
+				<h3>since</h3>
+			</div>
+			<div class="col1">
+				<h1>806</h1>
+				<h3>happy clients</h3>
+			</div>
+			<div class="col1">
+				<h1>923</h1>
+				<h3>projects</h3>
+			</div>
+		</section>
+		<footer>
+			<div class="footercontent">
+				<div class="col21">
+					<h3><span>About us</span></h3>
+					<p>Research is a process of systematic inquiry that entails collection of data; in accordance with suitable methodologies set by specific professional fields and academic disciplines.</p>
+				</div>
+				<div class="col22">
+					<h3><span>get in touch</span></h3>
+					<table>
+						<tr>
+							<td>Address:</td>
+							<td>66, South Street,</br>Woodsland, New Jersy</td>
+						</tr>
+						<tr>
+							<td>Phone:</td>
+							<td>+44 12345879 - Office</br>+44 23546789 - Fax</td>
+						</tr>
+						<tr>
+							<td>Email:</td>
+							<td>john@sitename.com</td>
+						</tr>
+					</table>
+					</div>
+				<div class="col23">
+					<h3><span>social media</span></h3>
+					<p>Research is a process of systematic inquiry that entails collection of data</p>
+					<a target="_blank" href="https://www.youtube.com/"><i class="fa fa-youtube"></i></a>
+					<a target="_blank" href="https://en.wikipedia.org/wiki/Google%2B"><i class="fa fa-google-plus"></i></a>
+					<a target="_blank" href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a>
+					<a target="_blank" href="https://picasa.en.uptodown.com/windows"><i class="fa fa-dribbble"></i></a>
+					<a target="_blank" href="https://en.wikipedia.org/wiki/Twitter"><i class="fa fa-twitter"></i></a>
+					<a target="_blank" href="https://en.wikipedia.org/wiki/Instagram"><i class="fa fa-instagram"></i></a>
+				</div>
+			</div>
+			<div class="copy">
+				<h3> Copyright &copy; 2016</h3>
+			</div>
+		</footer>
+	</center>
+</body>
+</html>
